@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: transparent;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist a {
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+
+.navlist a:hover {
+  border-bottom: 2px solid white;
+}
+
+#menu-icon {
+  color: blanchedalmond;
+  font-size: 35px;
+  z-index: 1001;
+  cursor: pointer;
+  display: none;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(245.59deg, #4d8a95 0%, #384670 28.53%, #131939 75.52%);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2px;
+}
+
+section {
+  padding: 0 19%;
+}
+
+
+
+.hero-text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: antiquewhite;
+  margin-bottom: 40px;
+}
+
+.hero-text h1 {
+  font-family: 'Playpen Sans', cursive;
+  font-size: 70px;
+  line-height: 1;
+  color: azure;
+  margin: 0 0 45px;
+}
+
+.hero-text p {
+  color: antiquewhite;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+
+.hero-text a {
+  display: inline-block;
+  color: beige;
+  background: #4d8a95;
+  border: 1px solid transparent;
+  padding: 12px 30px;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all .55s ease;
+  margin: 0 10px;
+}
+
+.hero-text a:hover {
+  background: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+}
+
+.hero-text a.ctaa {
+  background: transparent;
+  border: 1px solid white;
+  margin-left: 20px;
+}
+
+.hero-text a.ctaa i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+.hero-img {
+  display: flex;
+  justify-content: flex-end; /* Alinha a imagem para o canto direito */
+  align-items: flex-end; /* Alinha a imagem para o canto inferior */
+  position: relative; /* Certifique-se de que o container pai tenha posição relativa */
+}
+
+.hero-img img {
+  max-width: 70%; /* Reduz a proporção da imagem */
+  height: auto;
+  z-index: 2; /* Valor maior que o z-index das estrelas */
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Valor menor que o z-index do personagem */
+    width: 2000px; /* Ajuste o tamanho desejado */
+    filter: brightness(1.5); /* Ajuste o brilho (1 é o valor padrão, >1 aumenta o brilho) */
+  }
+
+
+
+.cta-separator {
+  height: 10px; 
+  width: 100%;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 6%;
+  right: 9%;
+}
+
+.scroll-down i {
+  display: flex;
+  padding: 12px;
+  font-size: 25px;
+  color: rgb(240, 231, 219);
+  background: #4d8a95;
+  border-radius: 30px;
+  transition: all .50s ease;
+}
+
+.scroll-down i:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 1195px) {
+  section {
+    padding: 0 3%;
+    transition: .3s;
+  }
+
+  .hero-text {
+    padding-top: 115px;
+  }
+
+  .hero-img {
+    width: 350px;
+    height: auto;
+  }
+
+  .hero {
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+}
+
