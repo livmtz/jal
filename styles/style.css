@@ -119,7 +119,8 @@ button {
   height: auto;
  }
  
- button.jogue .circle {
+ button.jogue .circle,
+ button.saiba .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
@@ -188,16 +189,6 @@ button {
   color: #fff;
  }
  
- button.saiba .circle {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: relative;
-  display: block;
-  margin: 0;
-  width: 3rem;
-  height: 3rem;
-  background: #282936;
-  border-radius: 1.625rem;
- }
  
  button.saiba .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
