@@ -99,7 +99,6 @@ section {
   margin: 0 10px;
 }
 
-/* Estilos compartilhados para todos os botões */
 button {
   position: relative;
   display: inline-block;
@@ -112,49 +111,42 @@ button {
   padding: 0;
   font-size: inherit;
   font-family: inherit;
-}
-
-/* Estilos para os botões "Jogue" e "Saiba Mais" */
-.button.jogue,
-.button.saiba {
+ }
+ 
+ button.jogue{
   width: 12rem;
   height: auto;
-  margin: 0 0 0 20px; /* Adicione margem à esquerda */
-}
-
-.button.jogue .circle,
-.button.saiba .circle {
+ }
+ 
+ button.jogue .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #282936;
+  background: #282936; /* muda cor botao*/
   border-radius: 1.625rem;
-}
-
-.button.jogue .circle .icon,
-.button.saiba .circle .icon {
+ }
+ 
+ button.jogue .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
   background: #fff;
-}
-
-.button.jogue .circle .icon.arrow,
-.button.saiba .circle .icon.arrow {
+ }
+ 
+ button.jogue .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
   background: none;
-}
-
-.button.jogue .circle .icon.arrow::before,
-.button.saiba .circle .icon.arrow::before {
+ }
+ 
+ button.jogue .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -164,10 +156,9 @@ button {
   border-top: 0.125rem solid #fff;
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);
-}
-
-.button.jogue .button-text,
-.button.saiba .button-text {
+ }
+ 
+ button.jogue .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -176,29 +167,113 @@ button {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
+  color: #f9faff;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
-}
-
-/* Estilos para os botões quando hover */
-button.jogue:hover .circle,
-button.saiba:hover .circle {
+ }
+ 
+ button:hover .circle {
   width: 100%;
-}
-
-button.jogue:hover .circle .icon.arrow,
-button.saiba:hover .circle .icon.arrow {
+ }
+ 
+ button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
-}
-
-button.jogue:hover .button-text,
-button.saiba:hover .button-text {
+ }
+ 
+ button:hover .button-text {
   color: #fff;
-}
+ }
 
+ button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+ }
+ 
+ button.saiba {
+  width: 12rem;
+  height: auto;
+ }
+ 
+ button.saiba .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+ }
+ 
+ button.saiba .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+ 
+ button.saiba .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ button.saiba .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ button.saiba .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #fefefe;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+ }
+ 
+ button:hover .circle {
+  width: 100%;
+ }
+ 
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ button:hover .button-text {
+  color: #fff;
+ }
 .hero-img {
   display: flex;
   justify-content: flex-end;
