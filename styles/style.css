@@ -128,7 +128,7 @@ button {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #fcfcff; /* muda cor botao*/
+  background: #282936; /* muda cor botao*/
   border-radius: 1.625rem;
  }
  
@@ -170,7 +170,7 @@ button {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: #282936;
+  color: #f9faff;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
