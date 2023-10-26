@@ -29,13 +29,6 @@ header {
   font-weight: 600;
   color: white;
 }
-#menu-icon {
-  color: blanchedalmond;
-  font-size: 35px;
-  z-index: 1001;
-  cursor: pointer;
-  display: none;
-}
 
 .navlist {
   display: flex;
