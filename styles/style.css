@@ -24,11 +24,6 @@ header {
   background: transparent;
 }
 
-.logo {
-  font-size: 30px;
-  font-weight: 600;
-  color: white;
-}
 
 .navlist {
   display: flex;
