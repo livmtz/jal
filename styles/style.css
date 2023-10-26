@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Aldrich&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playpen+Sans:wght@500&family=Poppins:wght@400;600;700&display=swap');
-
 @import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
 
 * {
@@ -73,7 +72,7 @@ section {
 }
 
 .hero-text h1 {
-  font-family:'Orbitron', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 60px;
   line-height: 1;
   color: rgb(239, 247, 247);
@@ -82,7 +81,6 @@ section {
 
 .hero-text p {
   color: antiquewhite;
-  font-family: 'Aldrich', sans-serif;
   font-size: 18px;
   line-height: 1.9;
   margin-bottom: 40px;
@@ -97,9 +95,10 @@ section {
   font-weight: 500;
   border-radius: 30px;
   text-transform: uppercase;
-  transition: all .55s ease;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   margin: 0 10px;
 }
+
 button {
   position: relative;
   display: inline-block;
@@ -112,130 +111,41 @@ button {
   padding: 0;
   font-size: inherit;
   font-family: inherit;
- }
- 
- button.jogue{
-  width: 12rem;
-  height: auto;
- }
- 
- button.jogue .circle {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: relative;
-  display: block;
-  margin: 0;
-  width: 3rem;
-  height: 3rem;
-  background: #282936; /* muda cor botao*/
-  border-radius: 1.625rem;
- }
- 
- button.jogue .circle .icon {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: #fff;
- }
- 
- button.jogue .circle .icon.arrow {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  left: 0.625rem;
-  width: 1.125rem;
-  height: 0.125rem;
-  background: none;
- }
- 
- button.jogue .circle .icon.arrow::before {
-  position: absolute;
-  content: "";
-  top: -0.29rem;
-  right: 0.0625rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-top: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
-  transform: rotate(45deg);
- }
- 
- button.jogue .button-text {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.75rem 0;
-  margin: 0 0 0 1.85rem;
-  color: #f9faff;
-  font-weight: 700;
-  line-height: 1.6;
-  text-align: center;
-  text-transform: uppercase;
- }
- 
- button:hover .circle {
-  width: 100%;
- }
- 
- button:hover .circle .icon.arrow {
-  background: #fff;
-  transform: translate(1rem, 0);
- }
- 
- button:hover .button-text {
-  color: #fff;
- }
+}
 
- button {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
-  text-decoration: none;
-  background: transparent;
-  padding: 0;
-  font-size: inherit;
-  font-family: inherit;
- }
- 
- button.saiba {
+button.jogue, button.saiba {
   width: 12rem;
   height: auto;
- }
- 
- button.saiba .circle {
+}
+
+button.jogue .circle, button.saiba .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #282936;
   border-radius: 1.625rem;
- }
- 
- button.saiba .circle .icon {
+}
+
+button.jogue .circle .icon, button.saiba .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
   background: #fff;
- }
- 
- button.saiba .circle .icon.arrow {
+}
+
+button.jogue .circle .icon.arrow, button.saiba .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
   background: none;
- }
- 
- button.saiba .circle .icon.arrow::before {
+}
+
+button.jogue .circle .icon.arrow::before, button.saiba .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -245,9 +155,9 @@ button {
   border-top: 0.125rem solid #fff;
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);
- }
- 
- button.saiba .button-text {
+}
+
+button.jogue .button-text, button.saiba .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -256,49 +166,43 @@ button {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: #fefefe;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
- }
- 
- button:hover .circle {
+}
+
+button:hover .circle {
   width: 100%;
- }
- 
- button:hover .circle .icon.arrow {
+}
+
+button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
- }
- 
- button:hover .button-text {
-  color: #fff;
- }
+}
 
 .hero-img {
   display: flex;
-  justify-content: flex-end; 
-  align-items: flex-end; 
-  position: relative; 
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
 }
 
 .hero-img img {
-  max-width: 70%; 
+  max-width: 70%;
   height: auto;
-  z-index: 2; 
+  z-index: 2;
 }
 
 .cta-separator {
-  height: 10px; 
+  height: 10px;
   width: 100%;
 }
-
 
 @media (max-width: 1195px) {
   section {
     padding: 0 3%;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .hero-text {
@@ -320,4 +224,3 @@ button {
     display: none;
   }
 }
-
