@@ -131,7 +131,8 @@ button {
   border-radius: 1.625rem;
  }
  
- button.jogue .circle .icon {
+ button.jogue .circle .icon,
+ button.saiba .circle .icon  {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -140,7 +141,8 @@ button {
   background: #fff;
  }
  
- button.jogue .circle .icon.arrow {
+ button.jogue .circle .icon.arrow,
+ button.saiba .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
@@ -148,7 +150,8 @@ button {
   background: none;
  }
  
- button.jogue .circle .icon.arrow::before {
+ button.jogue .circle .icon.arrow::before,
+ button.saiba .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -160,7 +163,8 @@ button {
   transform: rotate(45deg);
  }
  
- button.jogue .button-text {
+ button.jogue .button-text,
+ button.saiba .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -189,64 +193,6 @@ button {
   color: #fff;
  }
  
- 
- button.saiba .circle .icon {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: #fff;
- }
- 
- button.saiba .circle .icon.arrow {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  left: 0.625rem;
-  width: 1.125rem;
-  height: 0.125rem;
-  background: none;
- }
- 
- button.saiba .circle .icon.arrow::before {
-  position: absolute;
-  content: "";
-  top: -0.29rem;
-  right: 0.0625rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-top: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
-  transform: rotate(45deg);
- }
- 
- button.saiba .button-text {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.75rem 0;
-  margin: 0 0 0 1.85rem;
-  color: #fefefe;
-  font-weight: 700;
-  line-height: 1.6;
-  text-align: center;
-  text-transform: uppercase;
- }
- 
- button:hover .circle {
-  width: 100%;
- }
- 
- button:hover .circle .icon.arrow {
-  background: #fff;
-  transform: translate(1rem, 0);
- }
- 
- button:hover .button-text {
-  color: #fff;
- }
 
 .hero-img {
   display: flex;
