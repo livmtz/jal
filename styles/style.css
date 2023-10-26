@@ -24,10 +24,12 @@ header {
   background: transparent;
 }
 
-.logo {
-  font-size: 30px;
-  font-weight: 700;
-  color: white;
+#menu-icon a.icon {
+  background-image: url(./assets/icone.png);
+  background-size: cover;
+  width: 35px; /* Largura desejada */
+  height: 35px; /* Altura desejada */
+  display: inline-block;
 }
 
 .navlist {
@@ -47,13 +49,7 @@ header {
   border-bottom: 2px solid white;
 }
 
-#menu-icon {
-  color: blanchedalmond;
-  font-size: 35px;
-  z-index: 1001;
-  cursor: pointer;
-  display: none;
-}
+
 
 .hero {
   height: 100%;
