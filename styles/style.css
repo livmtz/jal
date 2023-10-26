@@ -24,6 +24,18 @@ header {
   background: transparent;
 }
 
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+#menu-icon {
+  color: blanchedalmond;
+  font-size: 35px;
+  z-index: 1001;
+  cursor: pointer;
+  display: none;
+}
 
 .navlist {
   display: flex;
