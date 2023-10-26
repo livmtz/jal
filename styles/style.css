@@ -281,6 +281,10 @@ button {
   position: relative;
 }
 
+.hero-text h1, .hero-text p, .button.jogue {
+  margin-left: 20px; /* Ajuste a margem esquerda conforme necessário */
+}
+
 .hero-img img {
   max-width: 70%;
   height: auto;
