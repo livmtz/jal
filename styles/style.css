@@ -113,6 +113,7 @@ button {
   font-family: inherit;
  }
  
+ button.saiba
  button.jogue{
   width: 12rem;
   height: auto;
@@ -185,11 +186,6 @@ button {
  
  button:hover .button-text {
   color: #fff;
- }
- 
- button.saiba {
-  width: 12rem;
-  height: auto;
  }
  
  button.saiba .circle {
