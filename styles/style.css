@@ -24,13 +24,6 @@ header {
   background: transparent;
 }
 
-#menu-icon a.icon {
-  background-image: url(./assets/icone.png);
-  background-size: cover;
-  width: 35px; /* Largura desejada */
-  height: 35px; /* Altura desejada */
-  display: inline-block;
-}
 
 .navlist {
   display: flex;
