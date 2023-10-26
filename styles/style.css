@@ -64,6 +64,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  margin-left: 60px;
   gap: 2px;
 }
 
@@ -274,6 +275,7 @@ button {
  button:hover .button-text {
   color: #fff;
  }
+
 .hero-img {
   display: flex;
   justify-content: flex-end;
